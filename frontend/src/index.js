@@ -7,6 +7,7 @@ import NavbarElement from './components/navbar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div id='home'></div>
     <NavbarElement />
     <App/>
   </React.StrictMode>
