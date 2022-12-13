@@ -1,7 +1,22 @@
 .App {
   position:relative;
-  top: 85px;
+  top: 10vh;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .App{
+      background: #191919;
+      list-style-type: none;
+      height: 10vh;
+      width:100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      padding: 0.2rem calc((100vw - 1000px) / 2);
+      z-index: 12;
+  }
 }
 
 .App-logo {

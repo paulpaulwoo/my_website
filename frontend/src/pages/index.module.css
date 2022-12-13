@@ -12,9 +12,43 @@
     color: aliceblue;
     font-size: 250%;
     width: 50%;
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 900px) {
+    .welcomeText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 150%;
+        width: 50%;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .welcomeText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 100%;
+        width: 50%;
+        padding-left: 10%;
+    }
 }
 .welcomeSection {
+    padding-top: 10%;
     display: flex;
+}
+
+.fullBodyShot {
+    width: 40%;
+    height: 50%;
+    padding-left: 10%;
 }
 
 .aboutmeSection {
@@ -40,7 +74,13 @@
     color: azure;
     padding-left: 5%;
 }
-
+.aboutmeTitleRight {
+    display: flex;
+    margin-top: 5%;
+    font-size: 200%;
+    color: azure;
+    padding-left: 55%;
+}
 .aboutmeTwoSubs {
     display: flex;
 }
@@ -68,4 +108,17 @@
 .educationSection {
     width:50%;
     display: inline;
+}
+
+.schoolImage {
+    width: 50%;
+    height: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2%;
+}
+.languageImage {
+    width: 45%;
+    height: 20%;
+    padding-left: 5%;
 }

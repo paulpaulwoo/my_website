@@ -1,14 +1,19 @@
-import React from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NavbarElement from './components/navbar';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
     <div id='home'></div>
+    <div style={{height: 0, overflow: 'auto' }}>
     <NavbarElement />
+    </div>
     <App/>
   </React.StrictMode>
 );
