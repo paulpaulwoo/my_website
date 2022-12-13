@@ -1,0 +1,11 @@
+.app {
+    position:relative;
+    top: 85px;
+    text-align: center;
+    background-color: #181818;
+}
+.welcomeText {
+    text-align: center;
+    color: aliceblue;
+    font-size: 250%;
+}
