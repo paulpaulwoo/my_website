@@ -25,26 +25,26 @@ export default function Index() {
                     <div className={indexCss.aboutmeTwoSubs}>
                     <div className={indexCss.educationSection}>
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         School: 
                     </h3>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         Purdue University
                     </h3>
                     </div>
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         Major: 
                     </h3>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         Computer Science
                     </h3>
                     </div>
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         Expected Graduation: 
                     </h3>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         May 2024
                     </h3>
                     
@@ -65,18 +65,18 @@ export default function Index() {
                     <div className={indexCss.educationSection}>
                     
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         Programming Languages / Tools: 
                     </h3>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         Python, Java, C, C++, TCL, JavaScript, HTML, SQL, Lex, Yacc, CSS
                     </h3>
                     </div>
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         Experienced with: 
                     </h3>
-                    <h3>
+                    <h3 className={indexCss.aboutmeH3}>
                         AMBA Protocol, HTTP, React, Flask, SQLite
                     </h3>
                     

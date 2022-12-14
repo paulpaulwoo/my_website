@@ -15,6 +15,31 @@
     padding-left: 10%;
 }
 
+@media screen and (min-width: 3000px) {
+    .welcomeText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 900%;
+        width: 50%;
+        padding-left: 10%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .welcomeText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 700%;
+        width: 50%;
+        padding-left: 10%;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .welcomeText {
         display: flex;
@@ -40,6 +65,8 @@
         padding-left: 10%;
     }
 }
+
+
 .welcomeSection {
     padding-top: 10%;
     display: flex;
@@ -92,7 +119,31 @@
         padding-left: 5%;
     }
 }
+@media screen and (min-width: 2000px) {
+    .aboutmeHeading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 800%;
+        width: 50%;
+        padding-left: 10%;
+    }
+}
 
+@media screen and (min-width: 3000px) {
+    .aboutmeHeading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 2500%;
+        width: 50%;
+        padding-left: 10%;
+    }
+}
 
 .aboutmeTitle {
     display: flex;
@@ -101,6 +152,16 @@
     color: azure;
     padding-left: 5%;
 }
+
+@media screen and (min-width: 2000px) {
+    .aboutmeTitle {
+        display: flex;
+    margin-top: 5%;
+    font-size: 500%;
+    color: azure;
+    padding-left: 5%;
+    }
+}
 .aboutmeTitleRight {
     display: flex;
     margin-top: 5%;
@@ -108,7 +169,15 @@
     color: azure;
     padding-left: 55%;
 }
-
+@media screen and (min-width: 2000px) {
+    .aboutmeTitleRight {
+        display: flex;
+    margin-top: 5%;
+    font-size: 500%;
+    color: azure;
+    padding-left: 55%;
+    }
+}
 @media screen and (max-width: 900px) {
     .aboutmeTitleRight {
         padding-left: 5%;
@@ -146,6 +215,15 @@
     width:100%;
     color: aliceblue;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 2000px) {
+    .aboutmeH3 {
+        font-size: 300%;
+    }
+    .aboutmeBody {
+        font-size: 300%;
+    }
 }
 
 .educationSection {
