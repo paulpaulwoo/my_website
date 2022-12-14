@@ -88,35 +88,22 @@ export default function Index() {
                     
                     </div>
                     <h2 className ={indexCss.aboutmeTitle}>
-                        Background:
+                        My Journey:
                     </h2>
                     <div className={indexCss.aboutmeTwoSubs}>
                     <div className={indexCss.educationSection}>
                     
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3>
-                        Programming Languages / Tools: 
-                    </h3>
-                    <h3>
-                        Python, Java, C, C++, TCL, JavaScript, HTML, SQL, Lex, Yacc, CSS
-                    </h3>
-                    </div>
-                    <div className={indexCss.aboutmeSubSection}>
-                    <h3>
-                        Experienced with: 
-                    </h3>
-                    <h3>
-                        AMBA Protocol, HTTP, React, Flask, SQLite
-                    </h3>
                     
                     </div>
                     <body className={indexCss.aboutmeBody}>
-                        I learned these tools in various ways. Some of them I learned directly through courses, some I learned as I go while doing projects. These certainly won't be the end of my list, and I look forward to learning more!
+                        I was born in 2001 April 28th in South Korea, and grew up there until high school, when I moved to the United States. 
+                        I was in Texas for the next few years for high school, then right now I am in Indiana for college. I am now excited about my next destination, 
+                        after I graduate Purdue University.
                     </body>
                     </div>
                     <img src={dog} alt="Progrmamming languages" className={indexCss.languageImage}></img>
                     </div>
-                
             </div>
         </div>
     )
