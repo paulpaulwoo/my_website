@@ -60,12 +60,39 @@
 
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     color: aliceblue;
     padding-left: 5%;
     font-size: 400%;
     width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+    .aboutmeHeading {
+        margin-top: 15%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: aliceblue;
+        padding-left: 5%;
+        font-size: 350%;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .aboutmeHeading {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: aliceblue;
+        font-size: 200%;
+        width: 100%;
+        padding-left: 5%;
+    }
+}
+
 
 .aboutmeTitle {
     display: flex;
@@ -81,9 +108,25 @@
     color: azure;
     padding-left: 55%;
 }
+
+@media screen and (max-width: 900px) {
+    .aboutmeTitleRight {
+        padding-left: 5%;
+    }
+    
+}
+
+
 .aboutmeTwoSubs {
     display: flex;
 }
+@media screen and (max-width: 900px) {
+    .aboutmeTwoSubs {
+        display: inline;
+    }
+    
+}
+
 
 .aboutmeBody {
     padding-top: 5%;
