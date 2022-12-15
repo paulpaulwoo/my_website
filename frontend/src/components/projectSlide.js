@@ -154,10 +154,10 @@ const Carousel = ({children}) => {
             My website
         </h1>
         <body className = "projectDescription">
-            This is a project I did for one of my courses, Systems programming. We were instructed to
-        build a shell as close as possible as the C shell. The hardest challenge I encountered was working with
-        lex and yacc, as I had no prior experiences actually working with regexes. Through this project, I learned a lot
-        about low level software building in a UNIX enviornment.
+            Of course, my website is one of the projects I did! Based on the knowledge I gained from doing the crystal ball 
+            project, I went further and created this website. The biggest challenge was definately this carousel, and learning
+            CSS in general was very tedious. As it is my first time developing everything in the frontend myself, this was definately 
+            a challenge. However, a fun challenge nonetheless!
         </body>
         
         </div>  

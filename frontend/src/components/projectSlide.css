@@ -3,20 +3,6 @@
     height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-    .projectSection{
-        display: inline;
-        justify-content: center;
-    }
-    .carousel-container {
-        width:100%;
-        position: relative;
-    }
-    .projectTextSection {
-        width:100%;
-        position: relative;
-    }
-}
 
 .carousel-container {
     width:50%;
@@ -74,7 +60,42 @@
 .projectName {
     height: 20%;
     display: block;
+    font-size: 400%;
+    color: aliceblue;
 }
 .projectDescription {
     height: 80%;
+    font-size:200%;
+    padding: 7%;
+    color: aliceblue;
+}
+@media screen and (min-width: 2000px) {
+    
+    .projectName {
+        font-size: 600%;
+    }
+    .projectDescription {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .projectSection{
+        display: inline;
+        justify-content: center;
+    }
+    .carousel-container {
+        width:100%;
+        position: relative;
+    }
+    .projectTextSection {
+        width:100%;
+        position: relative;
+    }
+    .projectName {
+        font-size: 200%;
+    }
+    .projectDescription {
+        font-size: 100%;
+    }
 }
