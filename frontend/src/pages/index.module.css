@@ -16,18 +16,7 @@
     padding-left: 10%;
 }
 
-@media screen and (min-width: 3000px) {
-    .welcomeText {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: aliceblue;
-        font-size: 900%;
-        width: 50%;
-        padding-left: 10%;
-    }
-}
+
 @media screen and (min-width: 2000px) {
     .welcomeText {
         display: flex;
@@ -40,7 +29,18 @@
         padding-left: 10%;
     }
 }
-
+@media screen and (min-width: 3000px) {
+    .welcomeText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 900%;
+        width: 50%;
+        padding-left: 10%;
+    }
+}
 @media screen and (max-width: 900px) {
     .welcomeText {
         display: flex;
@@ -81,6 +81,7 @@
 
 .aboutmeSection {
     display: inline;
+    
 }
 
 .aboutmeHeading {
@@ -247,4 +248,44 @@
 
 .carContainer {
     height: 50%;
+}
+.afterCar {
+    border-bottom: 2px #000000;
+}
+.contactSection {
+    padding-top: 10%;
+    display: block;
+    justify-content: center;
+    color: aliceblue;
+}
+.nameSection, .emailSection, .issueSection {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 37%;
+    padding-right: 37%;
+    background-color: rgb(30, 30, 30);
+    background-clip: content-box;
+
+}
+.labels{
+    background-color: rgb(30, 30, 30);
+    background-clip: content-box;
+
+}
+.submitButton {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 1%;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: large;
+    border-width: 5px;
+    border-color: azure;
+}
+.placeHolder{
+    width: 37%;
+}
+.nameInput, .contactInput, .issueText {
+    background-color: rgb(30, 30, 30);
+    background-clip: content-box;
 }

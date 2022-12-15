@@ -8,7 +8,43 @@ import Carousel, {CarouselItem} from '../components/projectSlide';
 import ball from "../images/Crystal Ball.png"
 import shell from "../images/shell2.png"
 import website from "../images/website.png"
+import { useState } from 'react'
 export default function Index() {
+    const [name, pushName]=useState(null)
+    const [contact, pushContact]=useState(null)
+    const [problem, pushProblem]=useState(null)
+    const [contactResultText, setContactResultText]=useState("Please don't spam, I want to keep my free API.")
+
+    function setName(val) {
+        pushName(val.target.value)
+      }
+      function setContact(val) {
+        pushContact(val.target.value)
+      }
+      function setProblem(val) {
+        pushProblem(val.target.value)
+      }
+    function sendBugReport() {
+        let bugInfo = {
+          "name": name,
+          "email": contact,
+          "problem": problem
+        };
+        fetch('/bugReport', {
+          "method": "POST",
+          "headers": {"Content-Type": "application/json"},
+          "body": JSON.stringify(bugInfo)
+        }).then(res => res.json()).then(
+          setContactResultText("Report Sent!")
+        )
+      }
+
+      const sendBugReportHandle = event => {
+        event.currentTarget.disabled = true;
+        console.log("button clicked")
+        sendBugReport()
+      };
+
     return (
         <div className={indexCss.app}>
             <div className={indexCss.welcomeSection}>
@@ -121,6 +157,32 @@ export default function Index() {
                     <CarouselItem><img src={website} alt="Progrmamming languages" style={{width: "100%"}}></img></CarouselItem>
                 </Carousel>
             </div>
+            <h1 className={indexCss.aboutmeHeading}>Contact me</h1>
+            <div className= {indexCss.contactSection}>
+
+            <div className={indexCss.nameSection}>
+            <label className={indexCss.labels}>Name:</label>
+            <input type="text" onChange={setName} 
+            className={indexCss.nameInput} placeholder="Enter Your Name"/>
+            </div>
+ 
+              <div className={indexCss.emailSection}>
+              <label className={indexCss.labels}>Email:</label>
+              <input type="text" onChange={setContact} 
+              className={indexCss.contactInput} placeholder="Enter Your Email"/>
+                </div>
+                <div className={indexCss.issueSection}>
+              <label className={indexCss.labels}>Inquery:</label>
+              <textarea 
+              className={indexCss.issueText} style={{width: "65%"}} placeholder="Enter Problem" rows="4" cols="35" onChange={setProblem}/>
+                </div>
+                <div className={indexCss.submitSection}>
+                <button className={indexCss.submitButton} onClick={() => sendBugReportHandle}> 
+                    Submit
+                </button>
+                <h3 className= {indexCss.contactResult}> {contactResultText} </h3>
+            </div>
+        </div>
         </div>
     )
 }
