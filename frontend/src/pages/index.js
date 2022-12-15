@@ -8,7 +8,9 @@ import Carousel, {CarouselItem} from '../components/projectSlide';
 import ball from "../images/Crystal Ball.png"
 import shell from "../images/shell2.png"
 import website from "../images/website.png"
+import myDog from "../images/myDog.png"
 import { useState } from 'react'
+
 export default function Index() {
     const [name, pushName]=useState(null)
     const [contact, pushContact]=useState(null)
@@ -157,9 +159,11 @@ export default function Index() {
                     <CarouselItem><img src={website} alt="Progrmamming languages" style={{width: "100%"}}></img></CarouselItem>
                 </Carousel>
             </div>
-            <h1 className={indexCss.aboutmeHeading}>Contact me</h1>
+            <div id="contacts"></div>
+            {
+               /* <h1 className={indexCss.aboutmeHeading}>Contact me</h1>
             <div className= {indexCss.contactSection}>
-
+            <div classNmae = {indexCss.contactTextSection}>
             <div className={indexCss.nameSection}>
             <label className={indexCss.labels}>Name:</label>
             <input type="text" onChange={setName} 
@@ -181,8 +185,41 @@ export default function Index() {
                     Submit
                 </button>
                 <h3 className= {indexCss.contactResult}> {contactResultText} </h3>
+                </div>
+            </div>
+            </div>*/
+            }
+            <h1 className={indexCss.aboutmeHeading}>Contact me</h1>
+            <div className= {indexCss.contactSection}>
+            <div className= {indexCss.contactsHalf}>
+            <div className={indexCss.contactsSubSection}>
+            <h3 className={indexCss.aboutmeH3}>Email:</h3>
+            <h3 className={indexCss.aboutmeH3}>paul153woo@gmail.com</h3>
+            </div>
+            <div className={indexCss.contactsSubSection}>
+            <h3 className={indexCss.aboutmeH3}>Phone #:</h3>
+            <h3 className={indexCss.aboutmeH3}>669-264-8858</h3>
+            </div>
+            </div>
+            <div classNmae = {indexCss.contactButtonSection}>
+            
+            <a href="https://www.linkedin.com/in/seungjoon-sj-woo-97a4a7220/" rel="noreferrer">
+            <button className={indexCss.profileButton} >LinkedIn</button>
+            </a>
+            <a href="https://github.com/paulpaulwoo" rel="noreferrer">
+            <button className={indexCss.profileButton} >Github</button>
+            </a>
+            
             </div>
         </div>
+        <div className={indexCss.welcomeSection}>
+                <img src={myDog} alt="FullBodyShot" className={indexCss.fullDogShot}></img>
+                <h1 className={indexCss.welcomeText}>
+                    Lastly, here's my dog, because who doesn't like dogs?
+                </h1>
+            </div>
+            <div style={{height: "200px"}}></div>
         </div>
+
     )
 }

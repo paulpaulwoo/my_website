@@ -254,17 +254,28 @@
 }
 .contactSection {
     padding-top: 10%;
-    display: block;
+    padding-left: 20%;
+    padding-right:20%;
+    display: flex;
     justify-content: center;
     color: aliceblue;
+
+    
 }
+
 .nameSection, .emailSection, .issueSection {
     display: flex;
-    justify-content: space-between;
-    padding-left: 37%;
-    padding-right: 37%;
+    justify-content: center;
+    margin-left: 37%;
+    margin-right: 37%;
     background-color: rgb(30, 30, 30);
-    background-clip: content-box;
+    background-clip: padding-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+    flex-shrink: 1;
+    text-size-adjust: auto;
+    border-width: 5px;
 
 }
 .labels{
@@ -273,8 +284,7 @@
 
 }
 .submitButton {
-    margin-top: 5%;
-    margin-bottom: 2%;
+
     padding: 1%;
     background-color: #000000;
     color: aliceblue;
@@ -287,5 +297,49 @@
 }
 .nameInput, .contactInput, .issueText {
     background-color: rgb(30, 30, 30);
-    background-clip: content-box;
+    border-width: 5px;
+    padding: 5%;
+}
+
+.profileButton {
+
+    padding: 1%;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: large;
+    border-width: 5px;
+    border-color: azure;
+    margin: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contactsSubSection {
+    
+    display: flex;
+    width:100%;
+    color: aliceblue;
+    justify-content: space-between;
+    height:50%
+}
+
+.contactsHalf {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contactButtonSection {
+    width: 50%;
+    display:inline;
+    
+}
+
+.fullDogShot {
+    width: 40%;
+    height: 50%;
+    padding-left: 10%;
+
 }
