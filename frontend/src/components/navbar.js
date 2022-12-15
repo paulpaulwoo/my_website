@@ -10,7 +10,7 @@ const NavbarElement = () => {
         <div className={navbarCss.navbarLinkClass}>
             <li><a className={navbarCss.navbarIndividualLinkClass} href="./#home">Home</a></li> 
             <li><a className={navbarCss.navbarIndividualLinkClass} href="./#aboutme">About me</a></li>
-            <li><a className={navbarCss.navbarIndividualLinkClass} href="contact.asp">Projects</a></li>
+            <li><a className={navbarCss.navbarIndividualLinkClass} href="#projects">Projects</a></li>
             <li><a className={navbarCss.navbarIndividualLinkClass} href="about.asp">Contacts</a></li>
         </div>
         </ul>

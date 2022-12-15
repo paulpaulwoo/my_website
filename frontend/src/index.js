@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NavbarElement from './components/navbar';
-import Carousel, {CarouselItem} from './components/projectSlide';
+//import Carousel, {CarouselItem} from './components/projectSlide';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
@@ -15,13 +15,7 @@ root.render(
     <NavbarElement />
     </div>
     <App/>
-    <div>
-      <Carousel>
-        <CarouselItem>Item 1</CarouselItem>
-        <CarouselItem>Item 2</CarouselItem>
-        <CarouselItem>Item 3</CarouselItem>
-      </Carousel>
-    </div>
+
   </React.StrictMode>
 );
 

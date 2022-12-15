@@ -3,6 +3,7 @@
     top: 85px;
     text-align: center;
     background-color: #181818;
+    
 }
 .welcomeText {
     display: flex;
@@ -84,7 +85,7 @@
 
 .aboutmeHeading {
     margin-top: 15%;
-
+    border-top: 2px solid #000000;
     display: flex;
     align-items: center;
     text-align: left;
@@ -242,4 +243,8 @@
     width: 45%;
     height: 20%;
     padding-left: 5%;
+}
+
+.carContainer {
+    height: 50%;
 }

@@ -5,7 +5,6 @@
 }
 @media screen and (max-width: 500px) {
   .App{
-      background: #191919;
       list-style-type: none;
       height: 10vh;
       width:100%;

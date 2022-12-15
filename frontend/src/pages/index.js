@@ -4,6 +4,10 @@ import Uni from '../images/banner20200323.jpg'
 import Langs from '../images/language.avif'
 import fam from '../images/family.jpg'
 import dog from '../images/dog.jpg'
+import Carousel, {CarouselItem} from '../components/projectSlide';
+import ball from "../images/Crystal Ball.png"
+import shell from "../images/shell2.png"
+import website from "../images/website.png"
 export default function Index() {
     return (
         <div className={indexCss.app}>
@@ -104,6 +108,18 @@ export default function Index() {
                     </div>
                     <img src={dog} alt="Progrmamming languages" className={indexCss.languageImage}></img>
                     </div>
+            </div>
+            <div id="projects"></div>
+            <div>
+                <h1 className={indexCss.aboutmeHeading}>Projects</h1>
+            </div>
+            <div style={{padding:"5%"}}></div>
+            <div className={indexCss.carContainer}>
+                <Carousel>
+                    <CarouselItem><img src={ball} alt="Progrmamming languages" style={{width:"80%"}}></img></CarouselItem>
+                    <CarouselItem><img src={shell} alt="Progrmamming languages" style={{width: "100%"}}></img></CarouselItem>
+                    <CarouselItem><img src={website} alt="Progrmamming languages" style={{width: "100%"}}></img></CarouselItem>
+                </Carousel>
             </div>
         </div>
     )
