@@ -3,6 +3,21 @@
     height: 100%;
 }
 
+@media screen and (max-width: 1000px) {
+    .projectSection{
+        display: inline;
+        justify-content: center;
+    }
+    .carousel-container {
+        width:100%;
+        position: relative;
+    }
+    .projectTextSection {
+        width:100%;
+        position: relative;
+    }
+}
+
 .carousel-container {
     width:50%;
     position: relative;
