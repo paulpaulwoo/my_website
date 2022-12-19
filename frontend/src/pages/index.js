@@ -95,7 +95,7 @@ export default function Index() {
                     </div>
                     <body className={indexCss.aboutmeBody}>
                         I truly learned a lot in this university. It easily has been my best years so far, 
-                        and my learning experiences <br></br> from the school do make me feel ready for the industry.
+                        and my learning experiences from the school do make me feel ready for the industry.
                     </body>
                     </div>
                     <img src={Uni} alt="University Shot" className={indexCss.schoolImage}></img>
@@ -104,7 +104,7 @@ export default function Index() {
                     <h2 className ={indexCss.aboutmeTitleRight}>
                         Toolset:
                     </h2>
-                    <div className={indexCss.aboutmeTwoSubs}>
+                    <div className={indexCss.aboutmeTwoSubsReverse}>
                     <img src={Langs} alt="Progrmamming languages" className={indexCss.languageImage}></img>
                     <div className={indexCss.educationSection}>
                     
@@ -204,8 +204,8 @@ export default function Index() {
             </div>
             <div className={indexCss.contactsSocialSection}>
             
-            <h3 className={indexCss.contactH3}>LinkedIn<sup style={{fontSize: "2vh"}}>TM</sup>:</h3>
-            <a href="https://www.linkedin.com/in/seungjoon-sj-woo-97a4a7220/" rel="noreferrer"><button className={indexCss.linkedinButton}><img className={indexCss.linkedinLogo} src={linkedIn}></img></button></a>
+            <h3 className={indexCss.contactH3} >LinkedIn<sup style={{fontSize: "min(2vh, 1vw)"}}>TM</sup>:</h3>
+            <a href="https://www.linkedin.com/in/seungjoon-sj-woo-97a4a7220/" rel="noreferrer" className={indexCss.githubLink}><button className={indexCss.linkedinButton}><img className={indexCss.linkedinLogo} src={linkedIn}></img></button></a>
             </div>
             <div className={indexCss.contactsSocialSection}>
             

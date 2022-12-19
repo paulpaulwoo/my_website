@@ -70,6 +70,9 @@
 .aboutmeTwoSubs {
     display: flex;
 }
+.aboutmeTwoSubsReverse {
+    display: flex;
+}
 
 
 
@@ -108,14 +111,11 @@
 .schoolImage {
     width: 50%;
     height: 20%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top:2%;
+
 }
 .languageImage {
-    width: 45%;
+    width: 50%;
     height: 20%;
-    padding-left: 5%;
 }
 
 .carContainer {
@@ -124,6 +124,59 @@
 .afterCar {
     border-bottom: 2px #000000;
 }
+
+@media screen and (min-height: 100vw) {
+    .aboutmeTwoSubs {
+        display: flex;
+        flex-flow: column;
+    }
+    .aboutmeTitleRight {
+        padding-left: 5%;
+    }
+    .educationSection {
+        width:100%;
+        display: inline;
+    }
+    .schoolImage {
+        width: 70vw;
+        margin-top: 2vh;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .languageImage {
+        width: 70vw;
+        margin-top: 2vh;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .aboutmeTwoSubs {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .aboutmeTwoSubsReverse {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutmeH3 {
+        font-size: 4vw;
+    }
+    .aboutmeH3_2 {
+        font-size: 3vw;
+    }
+    .aboutmeBody {
+        padding-top: 5%;
+        padding-left: 15vw;
+        padding-right:10vw;
+        display: flex;
+        width:100%;
+        font-size: 3.5vw;
+        color: aliceblue;
+    }
+}
+
+
+
 .contactSection {
     padding-top: 10%;
     margin-left: 20%;
@@ -234,19 +287,20 @@
 
 }
 .linkedinLogo {
-    width: 10vh;
+    width: min(10vh, 10vw);
+    
 }
 .githubLogo {
-    width: 10vh;
+    width: min(10vh, 10vw);
     background-color: white;
 
     border-radius: 5vh;
     
 }
 .linkedinButton {
-    color: aliceblue;
     border-width: 0;
     outline: 0;
+    background-color: #202020;
 }
 .githubButton {
     background-color: #202020;
@@ -254,11 +308,18 @@
     outline: 0;
 }
 .githubLink {
-
+    background-color: #202020;
+    border-radius: 5vh;
+    border-width: 0;
+}
+.linkedinLink {
+    background-color: #202020;
     border-radius: 5vh;
     border-width: 0;
 }
 .contactH3 {
-    font-size: 1.8vw;
+    font-size: max(1.8vw, 1vh);
     background-color: #202020;
+    justify-content: center;
+    margin-top: 2vh;
 }

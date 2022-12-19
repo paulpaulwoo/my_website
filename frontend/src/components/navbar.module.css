@@ -35,7 +35,7 @@
 
 .navbarLinkClass {
     margin: 0;
-    font-size: 3vh;
+    font-size: min(3vw, 3vh);
     justify-content: space-evenly;
     position: relative;
     resize: none;
