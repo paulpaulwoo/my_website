@@ -9,6 +9,8 @@ import ball from "../images/Crystal Ball.png"
 import shell from "../images/shell2.png"
 import website from "../images/website.png"
 import myDog from "../images/myDog.png"
+import linkedIn from "../images/linkedin-3-xxl.png"
+import github from "../images/github.png"
 import { useState } from 'react'
 
 export default function Index() {
@@ -107,18 +109,18 @@ export default function Index() {
                     <div className={indexCss.educationSection}>
                     
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3 className={indexCss.aboutmeH3}>
+                    <h3 className={indexCss.aboutmeH3_2}>
                         Programming Languages / Tools: 
                     </h3>
-                    <h3 className={indexCss.aboutmeH3}>
+                    <h3 className={indexCss.aboutmeH3_2}>
                         Python, Java, C, C++, TCL, JavaScript, HTML, SQL, Lex, Yacc, CSS
                     </h3>
                     </div>
                     <div className={indexCss.aboutmeSubSection}>
-                    <h3 className={indexCss.aboutmeH3}>
+                    <h3 className={indexCss.aboutmeH3_2}>
                         Experienced with: 
                     </h3>
-                    <h3 className={indexCss.aboutmeH3}>
+                    <h3 className={indexCss.aboutmeH3_2}>
                         AMBA Protocol, HTTP, React, Flask, SQLite
                     </h3>
                     
@@ -193,32 +195,39 @@ export default function Index() {
             <div className= {indexCss.contactSection}>
             <div className= {indexCss.contactsHalf}>
             <div className={indexCss.contactsSubSection}>
-            <h3 className={indexCss.aboutmeH3}>Email:</h3>
-            <h3 className={indexCss.aboutmeH3}>paul153woo@gmail.com</h3>
+            <h3 className={indexCss.contactH3}>Email:</h3>
+            <h3 className={indexCss.contactH3}>paul153woo@gmail.com</h3>
             </div>
             <div className={indexCss.contactsSubSection}>
-            <h3 className={indexCss.aboutmeH3}>Phone #:</h3>
-            <h3 className={indexCss.aboutmeH3}>669-264-8858</h3>
+            <h3 className={indexCss.contactH3}>Phone #:</h3>
+            <h3 className={indexCss.contactH3}>669-264-8858</h3>
             </div>
-            </div>
-            <div classNmae = {indexCss.contactButtonSection}>
+            <div className={indexCss.contactsSocialSection}>
             
-            <a href="https://www.linkedin.com/in/seungjoon-sj-woo-97a4a7220/" rel="noreferrer">
-            <button className={indexCss.profileButton} >LinkedIn</button>
-            </a>
-            <a href="https://github.com/paulpaulwoo" rel="noreferrer">
-            <button className={indexCss.profileButton} >Github</button>
-            </a>
-            
+            <h3 className={indexCss.contactH3}>LinkedIn<sup style={{fontSize: "2vh"}}>TM</sup>:</h3>
+            <a href="https://www.linkedin.com/in/seungjoon-sj-woo-97a4a7220/" rel="noreferrer"><button className={indexCss.linkedinButton}><img className={indexCss.linkedinLogo} src={linkedIn}></img></button></a>
             </div>
+            <div className={indexCss.contactsSocialSection}>
+            
+            <h3 className={indexCss.contactH3}>Github:</h3>
+            <a href="https://github.com/paulpaulwoo" rel="noreferrer" className={indexCss.githubLink}><button className={indexCss.githubButton}><img className={indexCss.githubLogo} src={github}></img></button></a>
+            </div>
+            </div>
+            
         </div>
-        <div className={indexCss.welcomeSection}>
+        {
+            /*
+            <div className={indexCss.welcomeSection}>
                 <img src={myDog} alt="FullBodyShot" className={indexCss.fullDogShot}></img>
                 <h1 className={indexCss.welcomeText}>
                     Lastly, here's my dog, because who doesn't like dogs?
                 </h1>
             </div>
             <div style={{height: "200px"}}></div>
+   
+        */
+        }
+
         </div>
 
     )

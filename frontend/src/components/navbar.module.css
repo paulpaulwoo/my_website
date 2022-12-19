@@ -12,46 +12,16 @@
     position: fixed;
     overflow: hidden;
     justify-content: space-between;
-    border-bottom: 2px solid #000000;
+    border-bottom: 0.1vh solid #000000;
     z-index: 12;
 }
 
-@media screen and (max-width: 500px) {
-    .navbarClass {
-        background: #191919;
-        list-style-type: none;
-        height: 5vh;
-        width:100%;
-        margin: 0;
-        display: flex;
-        position: fixed;
-        justify-content: space-between;
-        padding: 0.2rem calc((100vw - 1000px) / 2);
-        z-index: 12;
-    }
-  }
 
-  @media screen and (min-width: 2000px) {
-    .navbarClass {
-        background: #191919;
-        list-style-type: none;
-        height: fit-content;
-        width:100%;
-        margin: 0;
-        padding: 0.2rem calc((100vw - 1000px) / 2);
-        display: flex;
-        position: fixed;
-        justify-content: space-between;
-        
-        z-index: 12;
-    }
-  }
-  
 
 .navbarBrandClass {
     color: #d8330e;
     margin-left: none;
-    font-size: 40px;
+    font-size: 4vh;
     position: relative;
     left: -100px;
     display: flex;
@@ -65,8 +35,8 @@
 
 .navbarLinkClass {
     margin: 0;
-    font-size: 200%;
-    justify-content: space-between;
+    font-size: 3vh;
+    justify-content: space-evenly;
     position: relative;
     resize: none;
     color: #999999;
@@ -75,64 +45,27 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 1vh;
     height: 100%;
     width: 100%;
     cursor: pointer;
 }
-@media screen and (max-width: 700px) {
-    .navbarLinkClass {
-        font-size: 30%;
-        justify-content: space-between;
-    position: relative;
-    resize: none;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    cursor: pointer;
-    }
-  }
-  @media screen and (min-width: 2000px) {
-    .navbarLinkClass {
-        font-size: 500%;
-        justify-content: space-between;
-        position: relative;
-        resize: none;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        cursor: pointer;
-        
-    }
-  }
 
 
 .navbarIndividualLinkClass {
     resize: none;
     margin: 0;
     display:block;
-    padding: 8px;
+    padding: 1vh;
   background-color: #070707;
     color: #ececec;
     text-align: center;
     border-style: outset solid #555;
-    border-width: 5px;
+    border-width: 1vh;
 
 }
 
-@media screen and (min-width: 2000px) {
-    .navbarIndividualLinkClass {
-        resize: none;
-        margin: 0;
-        display:block;
-        padding: 8px;
-        text-align: center;
-        border-width: 15px;
-    
-    }
-    
-  }
+
 
 
 li a {
@@ -158,7 +91,6 @@ li a {
 
 .navbarIndividualLinkClass:active {
     border-style: inset;
-    border-width: 5px;
     text-decoration: none;
 }
 

@@ -31,7 +31,7 @@
     display: inline-flex;
     align-items: flex-end;
     justify-content: center;
-    height: 500px;  
+    height: 50%;  
     background: rgba(255, 122, 89, 0);
     color: #fff;
 }
@@ -40,16 +40,18 @@
     justify-content: center;
 }
 .indicators > button {
-    width:5%;
-    margin: 0.5%;
+    width:6%;
+    margin: 1vw;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    border-radius: 3%;
+    border-radius: 1vw;
+    border-width: 0.3vw;
     border-color: antiquewhite;
+    font-size: 1vw;
 }
 
 .indicators > button.active {
-    margin: 0.5%;
+    margin: 1vw;
     background-color: rgb(193, 39, 25);
     color: #fff;
 }
@@ -71,42 +73,12 @@
 .projectName {
     height: 20%;
     display: block;
-    font-size: 400%;
+    font-size: 4vw;
     color: aliceblue;
 }
 .projectDescription {
     height: 80%;
-    font-size:200%;
+    font-size:1.7vw;
     padding: 7%;
     color: aliceblue;
-}
-@media screen and (min-width: 2000px) {
-    
-    .projectName {
-        font-size: 600%;
-    }
-    .projectDescription {
-        font-size: 300%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .projectSection{
-        display: inline;
-        justify-content: center;
-    }
-    .carousel-container {
-        width:100%;
-        position: relative;
-    }
-    .projectTextSection {
-        width:100%;
-        position: relative;
-    }
-    .projectName {
-        font-size: 200%;
-    }
-    .projectDescription {
-        font-size: 100%;
-    }
 }
