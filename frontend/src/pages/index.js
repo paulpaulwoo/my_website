@@ -1,5 +1,6 @@
 import indexCss from './index.module.css'
 import MyImage from '../images/DSC04270.JPG'
+import MyImage2 from '../images/full_body_2.jpg'
 import Uni from '../images/banner20200323.jpg'
 import Langs from '../images/language.avif'
 import fam from '../images/family.jpg'
@@ -52,7 +53,7 @@ export default function Index() {
     return (
         <div className={indexCss.app}>
             <div className={indexCss.welcomeSection}>
-                <img src={MyImage} alt="FullBodyShot" className={indexCss.fullBodyShot}></img>
+                <img src={MyImage2} alt="FullBodyShot" className={indexCss.fullBodyShot}></img>
                 <h1 className={indexCss.welcomeText}>
                     Welcome to my page!<br></br> I'm Seungjoon(SJ) Woo, a student in Computer Science at Purdue University.
                     <br></br> I aspire to become a software engineer, one that will one day impact the world.
