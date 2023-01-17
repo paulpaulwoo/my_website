@@ -13,6 +13,7 @@ import myDog from "../images/myDog.png"
 import linkedIn from "../images/linkedin-3-xxl.png"
 import github from "../images/github.png"
 import { useState } from 'react'
+import GithubList from '../components/githubList'
 
 export default function Index() {
     const [name, pushName]=useState(null)
@@ -65,45 +66,46 @@ export default function Index() {
             <div className={indexCss.aboutmeSection}>
                 <h1 className={indexCss.aboutmeHeading}>About Me</h1>
                 
-
+                    <div className={indexCss.aboutmeBubble}>
                     <h2 className ={indexCss.aboutmeTitle}>
                         Education:
                     </h2>
                     <div className={indexCss.aboutmeTwoSubs}>
-                    
-                    <div className={indexCss.educationSection}>
-                    <div className={indexCss.aboutmeSubSection}>
-                    <h3 className={indexCss.aboutmeH3}>
-                        School: 
-                    </h3>
-                    <h3 className={indexCss.aboutmeH3}>
-                        Purdue University
-                    </h3>
-                    </div>
-                    <div className={indexCss.aboutmeSubSection}>
-                    <h3 className={indexCss.aboutmeH3}>
-                        Major: 
-                    </h3>
-                    <h3 className={indexCss.aboutmeH3}>
-                        Computer Science
-                    </h3>
-                    </div>
-                    <div className={indexCss.aboutmeSubSection}>
-                    <h3 className={indexCss.aboutmeH3}>
-                        Expected Graduation: 
-                    </h3>
-                    <h3 className={indexCss.aboutmeH3}>
-                        May 2024
-                    </h3>
-                    
-                    </div>
+                        <div className={indexCss.educationSection}>
+                            <div className={indexCss.aboutmeSubSection}>
+                                <h3 className={indexCss.aboutmeH3}>
+                                    School: 
+                                </h3>
+                                <h3 className={indexCss.aboutmeH3}>
+                                    Purdue University
+                                </h3>
+                                </div>
+                            <div className={indexCss.aboutmeSubSection}>
+                                <h3 className={indexCss.aboutmeH3}>
+                                    Major: 
+                                </h3>
+                                <h3 className={indexCss.aboutmeH3}>
+                                    Computer Science
+                                </h3>
+                            </div>
+                            <div className={indexCss.aboutmeSubSection}>
+                                <h3 className={indexCss.aboutmeH3}>
+                                    Expected Graduation: 
+                                </h3>
+                                <h3 className={indexCss.aboutmeH3}>
+                                    May 2024
+                                </h3>
+                            </div>
                     </div>
                     <img src={Uni} alt="University Shot" className={indexCss.schoolImage}></img>
                     </div>
-                    <body className={indexCss.aboutmeBody}>
-                        I truly learned a lot in this university. It easily has been my best years so far, 
-                        and my learning experiences from the school do make me feel ready for the industry.
-                    </body>
+                        <body className={indexCss.aboutmeBody}>
+                            I truly learned a lot in this university. It easily has been my best years so far, 
+                            and my learning experiences from the school do make me feel ready for the industry.
+                        </body>
+                    </div>
+
+                    <div className={indexCss.aboutmeBubble}>
                     <h2 className ={indexCss.aboutmeTitle}>
                         Toolset:
                     </h2>
@@ -135,6 +137,9 @@ export default function Index() {
                     <body className={indexCss.aboutmeBody}>
                         I learned these tools in various ways. Some of them I learned directly through courses, some I learned as I go while doing projects. These certainly won't be the end of my list, and I look forward to learning more!
                     </body>
+                    </div>
+
+                    <div className={indexCss.aboutmeBubble}>
                     <h2 className ={indexCss.aboutmeTitle}>
                         My Journey:
                     </h2>
@@ -152,6 +157,10 @@ export default function Index() {
                     </div>
                     <img src={dog} alt="Progrmamming languages" className={indexCss.languageImage}></img>
                     </div>
+                    <div className={indexCss.aboutmeLastPadding}></div>
+                    </div>
+
+
             </div>
             <div id="projects"></div>
             <div>
@@ -165,6 +174,14 @@ export default function Index() {
                     <CarouselItem><img src={website} alt="Progrmamming languages" style={{width: "100%"}}></img></CarouselItem>
                 </Carousel>
             </div>
+
+
+            <div className={indexCss.githubList}>
+                <GithubList/>
+
+            </div>    
+
+
             <div id="contacts"></div>
             {
                /* <h1 className={indexCss.aboutmeHeading}>Contact me</h1>

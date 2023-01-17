@@ -1,0 +1,19 @@
+.githubListClass {
+
+    list-style-type: none;
+    width:100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    z-index: 12;
+    background-color: aliceblue;
+}
+
+.loaded {
+    height: 50vh;
+}
+
+.unLoaded {
+
+    height: 0vh;
+}
