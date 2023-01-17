@@ -15,7 +15,7 @@ root.render(
     <NavbarElement />
     </div>
     <App/>
-
+    <div className='ending'></div>
   </React.StrictMode>
 );
 

@@ -51,6 +51,8 @@ export default function Index() {
       };
 
     return (
+        <div className={indexCss.mobileFormatter}>
+        <div className = {indexCss.mobileSpacing}></div>
         <div className={indexCss.app}>
             <div className={indexCss.welcomeSection}>
                 <img src={MyImage2} alt="FullBodyShot" className={indexCss.fullBodyShot}></img>
@@ -68,6 +70,7 @@ export default function Index() {
                         Education:
                     </h2>
                     <div className={indexCss.aboutmeTwoSubs}>
+                    
                     <div className={indexCss.educationSection}>
                     <div className={indexCss.aboutmeSubSection}>
                     <h3 className={indexCss.aboutmeH3}>
@@ -94,15 +97,14 @@ export default function Index() {
                     </h3>
                     
                     </div>
+                    </div>
+                    <img src={Uni} alt="University Shot" className={indexCss.schoolImage}></img>
+                    </div>
                     <body className={indexCss.aboutmeBody}>
                         I truly learned a lot in this university. It easily has been my best years so far, 
                         and my learning experiences from the school do make me feel ready for the industry.
                     </body>
-                    </div>
-                    <img src={Uni} alt="University Shot" className={indexCss.schoolImage}></img>
-                    </div>
-                    
-                    <h2 className ={indexCss.aboutmeTitleRight}>
+                    <h2 className ={indexCss.aboutmeTitle}>
                         Toolset:
                     </h2>
                     <div className={indexCss.aboutmeTwoSubsReverse}>
@@ -126,12 +128,13 @@ export default function Index() {
                     </h3>
                     
                     </div>
-                    <body className={indexCss.aboutmeBody}>
-                        I learned these tools in various ways. Some of them I learned directly through courses, some I learned as I go while doing projects. These certainly won't be the end of my list, and I look forward to learning more!
-                    </body>
+                    
                     </div>
                     
                     </div>
+                    <body className={indexCss.aboutmeBody}>
+                        I learned these tools in various ways. Some of them I learned directly through courses, some I learned as I go while doing projects. These certainly won't be the end of my list, and I look forward to learning more!
+                    </body>
                     <h2 className ={indexCss.aboutmeTitle}>
                         My Journey:
                     </h2>
@@ -141,7 +144,7 @@ export default function Index() {
                     <div className={indexCss.aboutmeSubSection}>
                     
                     </div>
-                    <body className={indexCss.aboutmeBody}>
+                    <body className={indexCss.aboutmeLongBody}>
                         I was born in 2001 April 28th in South Korea, and grew up there until high school, when I moved to the United States. 
                         I was in Texas for the next few years for high school, then right now I am in Indiana for college. I am now excited about my next destination, 
                         after I graduate Purdue University.
@@ -196,40 +199,29 @@ export default function Index() {
             <div className= {indexCss.contactSection}>
             <div className= {indexCss.contactsHalf}>
             <div className={indexCss.contactsSubSection}>
-            <h3 className={indexCss.contactH3}>Email:</h3>
+            <h3 className={indexCss.contactH3}>Email :</h3>
             <h3 className={indexCss.contactH3}>paul153woo@gmail.com</h3>
             </div>
             <div className={indexCss.contactsSubSection}>
-            <h3 className={indexCss.contactH3}>Phone #:</h3>
+            <h3 className={indexCss.contactH3}>Phone # :</h3>
             <h3 className={indexCss.contactH3}>669-264-8858</h3>
             </div>
             <div className={indexCss.contactsSocialSection}>
             
-            <h3 className={indexCss.contactH3} >LinkedIn<sup style={{fontSize: "min(2vh, 1vw)"}}>TM</sup>:</h3>
+            <h3 className={indexCss.contactH3} >LinkedIn<sup style={{fontSize: "1vh"}}>TM</sup> :</h3>
             <a href="https://www.linkedin.com/in/seungjoon-sj-woo-97a4a7220/" rel="noreferrer" className={indexCss.githubLink}><button className={indexCss.linkedinButton}><img className={indexCss.linkedinLogo} src={linkedIn}></img></button></a>
             </div>
             <div className={indexCss.contactsSocialSection}>
             
-            <h3 className={indexCss.contactH3}>Github:</h3>
+            <h3 className={indexCss.contactH3}>Github :</h3>
             <a href="https://github.com/paulpaulwoo" rel="noreferrer" className={indexCss.githubLink}><button className={indexCss.githubButton}><img className={indexCss.githubLogo} src={github}></img></button></a>
             </div>
             </div>
             
         </div>
-        {
-            /*
-            <div className={indexCss.welcomeSection}>
-                <img src={myDog} alt="FullBodyShot" className={indexCss.fullDogShot}></img>
-                <h1 className={indexCss.welcomeText}>
-                    Lastly, here's my dog, because who doesn't like dogs?
-                </h1>
-            </div>
-            <div style={{height: "200px"}}></div>
-   
-        */
-        }
 
         </div>
-
+        <div className = {indexCss.mobileSpacing}></div>
+        </div>
     )
 }

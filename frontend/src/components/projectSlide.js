@@ -135,8 +135,7 @@ const Carousel = ({children}) => {
         I mainly worked on the transmission / protocol between the frontend and backend, interaction between users,
         and most of the stock exchange functionality.
         </body>
-        
-        </div>    
+        </div>   
         <div className = {showSecond.fade}>
         <h1 className = "projectName">
             Shell Project
