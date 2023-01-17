@@ -90,7 +90,6 @@
     box-shadow: 2px 2px 2px 2px rgb(120, 119, 119);
     background-color: rgb(41, 41, 41);
     border-radius: 3vh;
-    height: 30vh;
     overflow: hidden;
 }
 .projectName {
@@ -98,7 +97,8 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 3vh;
+    align-items: center;
+    font-size: 4vh;
     background-color: rgb(41, 41, 41);
     color: aliceblue;
     overflow: hidden;
@@ -106,8 +106,8 @@
 .projectDescription {
     height: 80%;
     display: flex;
-    font-size: 2vh;
-    padding: 7%;
+    font-size: 3vh;
+    padding: 3vh;
     background-color: rgb(41, 41, 41);
     color: aliceblue;
     overflow: hidden;
