@@ -14,7 +14,7 @@
     justify-content: center;
     text-align: center;
     color: aliceblue;
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     width: 50%;
     padding-left: 10%;
     
@@ -344,46 +344,28 @@
 }
 
 @media screen and (min-height: 100vw) {
-    .aboutmeTwoSubs {
-        display: flex;
-        flex-flow: column;
-    }
-    .educationSection {
-        width:100%;
-        display: inline;
-    }
-    .schoolImage {
-        width: 70vw;
-        margin-top: 2vh;
-        margin-left: 15vw;
-        margin-right: 15vw;
-    }
-    .languageImage {
-        width: 70vw;
-        margin-top: 2vh;
-        margin-left: 15vw;
-        margin-right: 15vw;
-    }
-    .aboutmeTwoSubs {
-        display: flex;
-        flex-direction: column-reverse;
-        
-    }
-    .aboutmeTwoSubsReverse {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .mobileSpacing {
-        display: flex;
-        width: 0;
-        height:0;
-    }
     .app {
         width: 100vw;
     }
     
     .contactH3 {
-        font-size: 2vw;
+        font-size: 1.5vh;
     }
+    .aboutmeH3 {
+        font-size: 1.2vh;
+        width: 50%;
+    }
+    .aboutmeBody {
+        font-size: 1.5vh;
+    }
+    .aboutmeH3_2 {
+        font-size: 1.2vh;
+        
+    }
+    
+    .aboutmeLongBody {
+        font-size: 1.2vh;
+    }
+
 }

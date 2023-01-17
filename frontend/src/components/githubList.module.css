@@ -1,12 +1,16 @@
-.githubListClass {
+.githubListClass * {
+    color: azure;
+}
 
+.githubListClass {
+    padding: 5vh;
     list-style-type: none;
     width:100%;
     display: flex;
     overflow: hidden;
     justify-content: space-between;
     z-index: 12;
-    background-color: aliceblue;
+    background-color: azure;
 }
 
 .loaded {
@@ -14,6 +18,9 @@
 }
 
 .unLoaded {
+    height: 50vh;
+}
 
-    height: 0vh;
+.subject {
+    font-size: 5vh;
 }

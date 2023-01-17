@@ -86,11 +86,16 @@
     width:100%;
     position: relative;
     box-shadow: 2px 2px 2px 2px rgb(120, 119, 119);
+    
+    background-color: rgb(41, 41, 41);
     border-radius: 3vh;
+    overflow: hidden;
 }
 .projectName {
     height: 20%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 4vw;
     background-color: rgb(41, 41, 41);
     color: aliceblue;
@@ -98,6 +103,7 @@
 }
 .projectDescription {
     height: 80%;
+    display: flex;
     font-size:1.7vw;
     padding: 7%;
     background-color: rgb(41, 41, 41);
