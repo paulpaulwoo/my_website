@@ -56,7 +56,11 @@
 
 @media screen and (min-height: 100vw) {
     .githubTable {
-        padding: 3vh;
+        padding: 4vh;
+        height: 80%;
+    }
+    .subject {
+        height: 20%;
     }
     .githubTable *  {
         font-size: 1.5vh;

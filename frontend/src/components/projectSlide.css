@@ -54,6 +54,7 @@
 }
 
 .indicators > button.active {
+    width: 6vw;
     margin: 1vw;
     justify-content: space-evenly;
     background-color: rgb(193, 39, 25);
@@ -145,16 +146,6 @@
  
     }
 
-    .indicators > button.active {
-        
-        color: rgb(255, 255, 255);
-        border-radius: 1vh;
-        border-width: 0.3vh;
-        border-color: antiquewhite;
-        background-color: rgb(193, 39, 25);
-        
-
-    }
     .projectDescription {
         height: 20vh;
         font-size:1.4vh;
