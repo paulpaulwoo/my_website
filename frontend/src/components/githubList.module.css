@@ -38,7 +38,7 @@
 }
 
 .githubTable *  {
-    font-size: 1.5vh;
+    font-size: 2vh;
     background-color: rgb(201, 193, 193);
 }
 
@@ -52,4 +52,14 @@
 
 .githubTable * th {
     border: 1px solid;
+}
+
+@media screen and (min-height: 100vw) {
+    .githubTable {
+        padding: 3vh;
+    }
+    .githubTable *  {
+        font-size: 1.5vh;
+        
+    }
 }
