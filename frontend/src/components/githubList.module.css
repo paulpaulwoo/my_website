@@ -1,26 +1,55 @@
+
+
+
+
 .githubListClass * {
-    color: azure;
+    color: black;
 }
 
 .githubListClass {
-    padding: 5vh;
-    list-style-type: none;
+    
     width:100%;
-    display: flex;
+    display: inline;
     overflow: hidden;
     justify-content: space-between;
-    z-index: 12;
-    background-color: azure;
+    height: 100vh;
+    background-color: aliceblue;
 }
 
-.loaded {
-    height: 50vh;
-}
 
-.unLoaded {
-    height: 50vh;
-}
 
 .subject {
-    font-size: 5vh;
+    
+    font-size: 3vh;
+    height: 10%;
+    background-color: rgb(99, 101, 103);
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+}
+.githubTable {
+    height: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(99, 101, 103);
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+.githubTable *  {
+    font-size: 1.5vh;
+    background-color: rgb(201, 193, 193);
+}
+
+.githubTable * tr {
+    border: 1px solid;
+}
+
+.githubTable * td {
+    border: 1px solid;
+}
+
+.githubTable * th {
+    border: 1px solid;
 }

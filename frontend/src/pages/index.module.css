@@ -306,6 +306,13 @@
     padding-left: 10%;
 
 }
+
+
+.githubList {
+    height:30vh;
+    padding: 3vh;
+}
+
 .linkedinLogo {
     width: min(10vh, 10vw);
     

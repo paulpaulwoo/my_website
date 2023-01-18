@@ -99,10 +99,10 @@ export default function Index() {
                     </div>
                     <img src={Uni} alt="University Shot" className={indexCss.schoolImage}></img>
                     </div>
-                        <body className={indexCss.aboutmeBody}>
+                        <div className={indexCss.aboutmeBody}>
                             I truly learned a lot in this university. It easily has been my best years so far, 
                             and my learning experiences from the school do make me feel ready for the industry.
-                        </body>
+                        </div>
                     </div>
 
                     <div className={indexCss.aboutmeBubble}>
@@ -134,9 +134,9 @@ export default function Index() {
                     </div>
                     
                     </div>
-                    <body className={indexCss.aboutmeBody}>
+                    <div className={indexCss.aboutmeBody}>
                         I learned these tools in various ways. Some of them I learned directly through courses, some I learned as I go while doing projects. These certainly won't be the end of my list, and I look forward to learning more!
-                    </body>
+                    </div>
                     </div>
 
                     <div className={indexCss.aboutmeBubble}>
@@ -149,11 +149,11 @@ export default function Index() {
                     <div className={indexCss.aboutmeSubSection}>
                     
                     </div>
-                    <body className={indexCss.aboutmeLongBody}>
+                    <div className={indexCss.aboutmeLongBody}>
                         I was born in 2001 April 28th in South Korea, and grew up there until high school, when I moved to the United States. 
                         I was in Texas for the next few years for high school, then right now I am in Indiana for college. I am now excited about my next destination, 
                         after I graduate Purdue University.
-                    </body>
+                    </div>
                     </div>
                     <img src={dog} alt="Progrmamming languages" className={indexCss.languageImage}></img>
                     </div>
