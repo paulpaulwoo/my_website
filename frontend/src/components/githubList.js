@@ -1,39 +1,42 @@
 import React from "react"
 import Container from 'react-bootstrap/Container';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import githubCss from './githubList.module.css'
 
 const GithubList = () => {
     const [loaded, setLoaded] = useState(githubCss.unLoaded);
+    const [datas, setDatas] = useState([]);
 
     function apiRequest() {
-        let userInfo = {
-            "id": sessionStorage.getItem("id")
-        };
-        fetch('/getUserPortfolios', {
-            "method": "POST",
+        var jsons = []
+        fetch('https://api.github.com/users/paulpaulwoo/events?per_page=4', {
+            "method": "GET",
             "headers": {"Content-Type": "application/json"},
-            "body": JSON.stringify(userInfo)
         }).then(res=>res.json()).then(
           data => {
-            for (let i = 0; i < data.size; i++) {
-                var port = {
-                    value: data.portIds[i],
-                    label: data.portNames[i]
-                }
-                //portOption.push(port)
-
+            console.log(data)
+            for (let i = 0; i < data.length; i++) {
+                console.log(data[i])
+                var port = [data[i].type, data[i].repo.name]
+                jsons.push(port)
             }
+            console.log(jsons)
+            setDatas(datas)
             setLoaded(true)
           }
         )
     }
+
+    useEffect(() => {
+        apiRequest();
+      }, [])
 
     return (
         <div className= {githubCss.githubListClass + ' ' + loaded}>
             <div className = {githubCss.subject}>
                 I am currently working on....
             </div>
+
         </div>
 
     );
