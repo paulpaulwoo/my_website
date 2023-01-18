@@ -78,7 +78,7 @@
     display: flex;
     font-size: 4vh;
     color: azure;
-    padding-left: 5%;
+    padding: 5%;
     border-top-left-radius: 5vh;
     border-top-right-radius: 5vh;
 }
@@ -310,7 +310,7 @@
 
 .githubList {
     height:30vh;
-    padding: 3vh;
+    padding: 2vh;
 }
 
 .linkedinLogo {
@@ -358,7 +358,7 @@
     }
     
     .contactH3 {
-        font-size: 1.3vh;
+        font-size: 1vh;
     }
     .aboutmeH3 {
         font-size: 1.2vh;
@@ -370,6 +370,9 @@
     .aboutmeH3_2 {
         font-size: 1vh;
         
+    }
+    .aboutmeTitle {
+        font-size: 3vh;
     }
     
     .aboutmeLongBody {
