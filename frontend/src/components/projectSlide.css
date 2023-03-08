@@ -54,8 +54,7 @@
 }
 
 .indicators > button.active {
-    width: 6vw;
-    margin: 1vw;
+
     justify-content: space-evenly;
     background-color: rgb(193, 39, 25);
     color: #fff;

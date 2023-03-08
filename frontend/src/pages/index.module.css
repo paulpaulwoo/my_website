@@ -3,11 +3,13 @@
     top: 65px;
     text-align: center;
     background-color: #181818;
-    width: 50vw;
+    width: 200vh;
     border-radius: 5vw;
 
 
 }
+
+
 .welcomeText {
     display: flex;
     align-items: center;
@@ -113,7 +115,7 @@
     padding-right:10%;
     display: flex;
     width:100%;
-    font-size: 3vh;
+    font-size: calc(1.5 * vh +1.5 * vw);
     color: aliceblue;
     border-bottom-left-radius: 5vh;
     border-bottom-right-radius: 5vh;
@@ -127,7 +129,7 @@
     padding-right:10%;
     display: flex;
     width:100%;
-    font-size: 2.3vh;
+    font-size: min(2vh, 2vw);
     color: aliceblue;
 
 
@@ -345,7 +347,7 @@
     border-width: 0;
 }
 .contactH3 {
-    font-size: 2vh;
+    font-size: min(2vh, 1.5vw);
     background-color: #202020;
     justify-content: center;
     margin-top: 2vh;

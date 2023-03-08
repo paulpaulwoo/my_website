@@ -20,7 +20,7 @@ export default function Index() {
     const [contact, pushContact]=useState(null)
     const [problem, pushProblem]=useState(null)
     const [contactResultText, setContactResultText]=useState("Please don't spam, I want to keep my free API.")
-
+    const news_api_key = "cf4d647f0bd442ffb4465047d7bbcf3e"
     function setName(val) {
         pushName(val.target.value)
       }
@@ -178,7 +178,7 @@ export default function Index() {
 
             <div className={indexCss.githubList}>
                 <GithubList/>
-
+                
             </div>    
 
 
@@ -236,9 +236,10 @@ export default function Index() {
             </div>
             
         </div>
-
+            
         </div>
         <div className = {indexCss.mobileSpacing}></div>
         </div>
     )
+    
 }
